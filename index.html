@@ -53,13 +53,23 @@
           </li>
         </ul>
       </address>
-      <button class="btn-mob-menu-open">
+      <button class="mob-menu-open-btn" data-menu-open>
         <svg class="mob-menu-open-icon" width="32" height="24">
           <use href="./images/icons.svg#menu-hamburger"></use>
         </svg>
       </button>
+    </div>
+    <div class="mobile-menu is-hidden" data-menu>
+      <div class="container container-mob-menu">
+        <button class="mob-menu-close-btn" data-menu-close>
+          <svg class="mob-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
 
     </div>
+
   </header>
   <main>
     <!-- section Hero-->
@@ -452,6 +462,7 @@
       </form>
     </div>
   </div> -->
+  <script src="./js/mobile-menu.js"></script>
   <!-- <script src="./js/modal.js"></script> -->
 </body>
 
