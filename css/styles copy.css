@@ -71,7 +71,7 @@
     --transition-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* -- Global -- */
+/* ------------------------------------- Global -- */
 
 body {
     color: var(--color-primary);
@@ -107,7 +107,7 @@ input {
     padding: 0;
 }
 
-/* -- Common for All Pages -- */
+/* ----- Common for All Pages -- */
 
 .container {
     max-width: 1158px;
@@ -136,7 +136,7 @@ input {
     margin: 0;
 }
 
-/* UI components */
+/* ----- UI components -- */
 .link {
     font-family: var(--font-primary);
     text-decoration: none;
@@ -190,7 +190,7 @@ input {
     outline: transparent;
 }
 
-/* Header */
+/* ------------------------------------- Header -- */
 
 header {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -278,7 +278,7 @@ header {
     letter-spacing: 0.02em;
 }
 
-/* Footer */
+/*------------------------------------- Footer -- */
 
 .footer {
     padding-top: 100px;
@@ -411,8 +411,8 @@ header {
     background-color: var(--bg-color-btn-hero-hover);
 }
 
-/* -- Main Page -- */
-
+/* ------------------------------------- Main Page -- */
+/* ----- HERO section -- */
 .hero-section {
     padding: 188px 0;
     max-width: 1440px;
@@ -434,6 +434,7 @@ header {
     /* text-transform: none; */
 }
 
+/* ----- Features section -- */
 .features-section {
     padding: 120px 0;
 }
@@ -478,6 +479,7 @@ header {
     letter-spacing: 0.02em;
 }
 
+/* ----- What We Do section -- */
 .whatwedo-section {
     padding-bottom: 120px;
 }
@@ -503,6 +505,7 @@ header {
     margin-bottom: 72px;
 }
 
+/* ----- Team section -- */
 .team-section {
     background-color: var(--bg-color-light);
     padding-top: 120px;
@@ -573,6 +576,7 @@ header {
     height: var(--size);
 }
 
+/* ----- Customers section -- */
 .customers-section {
     padding: 130px 0 120px 0;
 }
@@ -612,7 +616,7 @@ header {
     height: 56px;
 }
 
-/* -- Portfolio Page -- */
+/* ------------------------------------- Portfolio Page -- */
 
 .filters {
     display: flex;
@@ -699,7 +703,7 @@ header {
     background-color: var(--bg-color);
 }
 
-/* -- Modal windows -- */
+/* ------------------------------------- Modal windows -- */
 
 .backdrop {
     position: fixed;

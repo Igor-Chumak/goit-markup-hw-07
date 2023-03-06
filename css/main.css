@@ -1,0 +1,204 @@
+/* ------------------------------------- Main Page -- */
+/* ----- HERO section -- */
+.hero-section {
+    padding: 188px 0;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-title {
+    max-width: 496px;
+    margin: 0 auto 48px;
+    color: var(--color-hero-title);
+    font-size: 56px;
+    line-height: calc(60/56);
+    letter-spacing: 0.02em;
+    text-align: center;
+    /* text-transform: none; */
+}
+
+/* ----- Features section -- */
+.features-section {
+    padding: 120px 0;
+}
+
+.features-flex {
+    display: flex;
+    gap: 24px;
+}
+
+.features-item {
+    flex-basis: calc((100% - 3*24px) / 4);
+    /* max-width: 264px; */
+}
+
+.features-icon-box {
+    display: flex;
+    width: 100%;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-light);
+    border-radius: 4px;
+}
+
+.features-icon {
+    --size: 64px;
+    width: var(--size);
+    height: var(--size);
+}
+
+.features-title {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: 0.02em;
+}
+
+.features-text {
+    margin-top: 8px;
+    color: var(--color-secondary);
+    letter-spacing: 0.02em;
+}
+
+/* ----- What We Do section -- */
+.whatwedo-section {
+    padding-bottom: 120px;
+}
+
+.whatwedo-flex {
+    display: flex;
+    gap: 24px;
+}
+
+.whatwedo-item {
+    flex-basis: calc((100% - 2*24px) / 3);
+    /* max-width: 360px; */
+}
+
+.whatwedo-title,
+.team-title,
+.customers-title {
+    text-transform: capitalize;
+    font-size: 36px;
+    line-height: calc(40/36);
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+/* ----- Team section -- */
+.team-section {
+    background-color: var(--bg-color-light);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-flex {
+    display: flex;
+    gap: 24px;
+}
+
+.team-item {
+    flex-basis: calc((100% - 3*24px) / 4);
+    /* max-width: 264px; */
+    background-color: var(--bg-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-content {
+    padding: 32px 16px;
+}
+
+.team-item-name {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.team-description {
+    color: var(--color-secondary);
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-icons-box {
+    display: flex;
+    gap: 24px;
+}
+
+.team-icon-box {
+    width: 40px;
+    height: 40px;
+}
+
+.team-icon-ref {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-team-icon);
+    border-radius: 50%;
+    transition: background-color var(--transition-property);
+}
+
+.team-icon-ref:is(:hover, :focus) {
+    background-color: var(--bg-color-team-icon-hover);
+}
+
+.team-icon {
+    --size: 16px;
+    width: var(--size);
+    height: var(--size);
+}
+
+/* ----- Customers section -- */
+.customers-section {
+    padding: 130px 0 120px 0;
+}
+
+.customers-flex {
+    display: flex;
+    gap: 24px;
+}
+
+.customers-item {
+    flex-basis: calc((100% - 5*24px) / 6);
+    height: 88px;
+}
+
+.customers-icon-ref {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-customs);
+    border: 1px solid var(--color-customs);
+    border-radius: 4px;
+
+    transition: color var(--transition-property), border-color var(--transition-property);
+}
+
+.customers-icon-ref:is(:focus, :hover) {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    outline: transparent;
+}
+
+.customers-icon {
+    fill: currentColor;
+    width: 104px;
+    height: 56px;
+}
