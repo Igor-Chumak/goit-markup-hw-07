@@ -113,7 +113,9 @@ input {
     max-width: 428px;
     margin: 0 auto;
     padding: 0 16px;
-    /* outline: 1px dotted red; */
+
+    /* off */
+    outline: 1px dotted red;
 }
 
 @media screen and (min-width: 768px) {
@@ -482,7 +484,7 @@ header {
         position: absolute;
         bottom: 40px;
         left: 40px;
-        /* outline: 1px dotted purple; */
+
         display: flex;
         justify-content: space-between;
     }
@@ -517,134 +519,162 @@ header {
 /*------------------------------------- Footer -- */
 
 .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 
     background-color: var(--bg-color-dark);
 }
 
 .footer-flex {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .footer-content {
-    max-width: 264px;
-    /* outline: 1px dotted white; */
+    max-width: 268px;
+    outline: 1px dotted white;
 }
 
 .footer-text {
+    margin-top: 16px;
+    letter-spacing: 0.02em;
     color: var(--color-footer);
-    letter-spacing: 0.02em;
-    margin-top: 16px;
 }
 
-.footer-social {
-    max-width: 208px;
-    /* outline: 1px dotted white; */
-    color: var(--color-social);
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    margin-left: 120px;
-}
 
-.footer-icons-box {
-    margin-top: 16px;
-    display: flex;
-    gap: 16px;
-}
 
-.footer-icon-box {
-    --size: 40px;
-    width: var(--size);
-    height: var(--size);
-}
 
-.footer-icon-ref {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bg-color-btn-social);
-    border-radius: 50%;
 
-    transition: background-color var(--transition-property);
-}
+@media screen and (min-width: 1200px) {
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
-.footer-icon-ref:is(:hover, :focus) {
-    background-color: var(--bg-color-btn-social-hover);
-}
+    .footer-flex {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 
-.footer-icon {
-    --size: 24px;
-    width: var(--size);
-    height: var(--size);
-}
+    .footer-content {
+        max-width: 264px;
+    }
 
-.footer-form-subscribe {
-    width: 453px;
-    margin-left: auto;
-    color: var(--color-subscribe);
-}
+    .footer-text {
+        color: var(--color-footer);
+        letter-spacing: 0.02em;
+        margin-top: 16px;
+    }
 
-.footer-subscribe-title {
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    margin-bottom: 16px;
-}
+    .footer-social {
+        max-width: 208px;
+        color: var(--color-social);
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        margin-left: 120px;
+        outline: 1px dotted white;
+    }
 
-.subscribe-wrap {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 24px;
-}
+    .footer-icons-box {
+        margin-top: 16px;
+        display: flex;
+        gap: 16px;
+    }
 
-.footer-input {
-    width: 264px;
-    padding: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    .footer-icon-box {
+        --size: 40px;
+        width: var(--size);
+        height: var(--size);
+    }
 
-    font-size: 12px;
-    line-height: calc(24 / 12);
-    letter-spacing: 0.04em;
+    .footer-icon-ref {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-color-btn-social);
+        border-radius: 50%;
 
-    color: var(--color-subscribe-placeholder);
-    background-color: inherit;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-}
+        transition: background-color var(--transition-property);
+    }
 
-.footer-input:focus {
-    color: var(--color-subscribe);
-    border-color: var(--color-subscribe);
-    outline: none;
-}
+    .footer-icon-ref:is(:hover, :focus) {
+        background-color: var(--bg-color-btn-social-hover);
+    }
 
-.btn-footer {
+    .footer-icon {
+        --size: 24px;
+        width: var(--size);
+        height: var(--size);
+    }
 
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 8px 24px;
+    .footer-form-subscribe {
+        width: 453px;
+        margin-left: auto;
+        color: var(--color-subscribe);
+    }
 
-    font-weight: 500;
-    line-height: calc(24 / 16);
-    letter-spacing: 0.04em;
+    .footer-subscribe-title {
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+    }
 
-    color: var(--color-subscribe);
-    background-color: var(--bg-color-btn-footer);
-    border: 0px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color var(--transition-property);
-}
+    .subscribe-wrap {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 24px;
+    }
 
-.btn-footer:is(:hover, :focus) {
-    background-color: var(--bg-color-btn-hero-hover);
+    .footer-input {
+        width: 264px;
+        padding: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        font-size: 12px;
+        line-height: calc(24 / 12);
+        letter-spacing: 0.04em;
+
+        color: var(--color-subscribe-placeholder);
+        background-color: inherit;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+    }
+
+    .footer-input:focus {
+        color: var(--color-subscribe);
+        border-color: var(--color-subscribe);
+        outline: none;
+    }
+
+    .btn-footer {
+
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 8px 24px;
+
+        font-weight: 500;
+        line-height: calc(24 / 16);
+        letter-spacing: 0.04em;
+
+        color: var(--color-subscribe);
+        background-color: var(--bg-color-btn-footer);
+        border: 0px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color var(--transition-property);
+    }
+
+    .btn-footer:is(:hover, :focus) {
+        background-color: var(--bg-color-btn-hero-hover);
+    }
 }
 
 /* ------------------------------------- Modal windows -- */
