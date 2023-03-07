@@ -278,7 +278,8 @@ header {
 
 .header .logo {
     display: block;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logo-part-header {
@@ -323,7 +324,6 @@ header {
 
 @media screen and (min-width: 1200px) {
     .nav-link {
-        padding-top: 24px;
         padding-bottom: 24px;
     }
 }
@@ -345,7 +345,6 @@ header {
         padding-top: 24px;
         padding-bottom: 24px;
         font-size: inherit;
-        font-weight: inherit;
         line-height: calc(24/16);
         letter-spacing: 0.02em;
     }
