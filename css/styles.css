@@ -597,8 +597,8 @@ header {
 
 
 .footer-form-subscribe {
-    width: 398px;
-    /* max-width: 398px; */
+    width: 100%;
+    max-width: 398px;
     color: var(--color-subscribe);
 
     outline: 1px dotted white;
