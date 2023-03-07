@@ -516,7 +516,6 @@ header {
 }
 
 /* ------------------------------------- Modal windows -- */
-
 .backdrop {
     position: fixed;
     top: 0;
