@@ -389,9 +389,6 @@ header {
 }
 
 .mob-nav-link {
-    /* display: block; */
-    /* padding: 24px 0; */
-
     font-weight: 700;
     font-size: 34px;
     line-height: calc(40/34);
@@ -400,7 +397,7 @@ header {
 }
 
 .mob-nav-side>li:not(:last-child),
-.mob-address-side>li:not(:last-child) {
+.mob-address-side li:not(:last-child) {
     margin-bottom: 40px;
 }
 
@@ -431,6 +428,43 @@ header {
     letter-spacing: 0.02em;
 }
 
+.mob-menu-icons-box {
+    width: calc(100% - 40px);
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+
+    display: flex;
+    padding-left: 4px;
+    padding-right: 24px;
+    justify-content: space-between;
+}
+
+.mob-menu-icon-box {
+    width: 40px;
+    height: 40px;
+}
+
+.mob-menu-icon-ref {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-team-icon);
+    border-radius: 50%;
+    transition: background-color var(--transition-property);
+}
+
+.mob-menu-icon-ref:is(:hover, :focus) {
+    background-color: var(--bg-color-team-icon-hover);
+}
+
+.mob-menu-icon {
+    --size: 24px;
+    width: var(--size);
+    height: var(--size);
+}
 
 /*------------------------------------- Footer -- */
 
