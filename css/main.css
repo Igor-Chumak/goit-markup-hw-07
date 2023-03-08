@@ -100,7 +100,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
 .features-item {
     flex-basis: 100%;
-    /* max-width: 396px; */
+    max-width: 396px;
 }
 
 .features-icon-box {
@@ -131,7 +131,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
     .features-item {
         flex-basis: calc((100% - 1*24px) / 2);
-        /* max-width: 356px; */
+        max-width: 356px;
     }
 
     .features-title {
@@ -197,7 +197,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     .whatwedo-section {
         display: block;
         padding-bottom: 120px;
-
     }
 
     .whatwedo-flex {
@@ -224,14 +223,57 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
 /* ----- Team section -- */
 
-@media screen and (min-width: 768px) {}
+.team-section {
+    background-color: var(--bg-color-light);
+    padding-top: 96px;
+    padding-bottom: 128px;
+
+}
+
+.team-section>.container {
+    padding-left: 82px;
+    padding-right: 82px;
+}
+
+.team-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
+    z-index: 1;
+}
+
+.team-item {
+    flex-basis: 100%;
+    max-width: 260px;
+    background-color: var(--bg-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .team-section {
+        /* padding-top: 96px; */
+        padding-bottom: 96px;
+    }
+
+    .team-section>.container {
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+}
 
 @media screen and (min-width: 1200px) {
 
     .team-section {
-        background-color: var(--bg-color-light);
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+
+    .team-section>.container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .team-flex {
@@ -242,9 +284,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     .team-item {
         flex-basis: calc((100% - 3*24px) / 4);
         /* max-width: 264px; */
-        background-color: var(--bg-color);
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-        border-radius: 0px 0px 4px 4px;
     }
 
     .team-content {
