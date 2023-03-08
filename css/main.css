@@ -108,7 +108,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 .features-title {
-    /* margin-top: 8px; */
     text-align: center;
     font-weight: 700;
     font-size: 36px;
@@ -138,8 +137,6 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     .features-title {
         text-align: left;
     }
-
-    .features-text {}
 }
 
 @media screen and (min-width: 1200px) {
@@ -191,29 +188,35 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
 /* ----- What We Do section -- */
 
-.whatwedo-section {
-    padding-bottom: 120px;
-}
 
-.whatwedo-flex {
-    display: flex;
-    gap: 24px;
-}
+@media screen and (min-width: 768px) {}
 
-.whatwedo-item {
-    flex-basis: calc((100% - 2*24px) / 3);
-    /* max-width: 360px; */
-}
+@media screen and (min-width: 1200px) {
 
-.whatwedo-title,
-.team-title,
-.customers-title {
-    text-transform: capitalize;
-    font-size: 36px;
-    line-height: calc(40/36);
-    letter-spacing: 0.02em;
-    text-align: center;
-    margin-bottom: 72px;
+    .whatwedo-section {
+        padding-bottom: 120px;
+    }
+
+    .whatwedo-flex {
+        display: flex;
+        gap: 24px;
+    }
+
+    .whatwedo-item {
+        flex-basis: calc((100% - 2*24px) / 3);
+        /* max-width: 360px; */
+    }
+
+    .whatwedo-title,
+    .team-title,
+    .customers-title {
+        text-transform: capitalize;
+        font-size: 36px;
+        line-height: calc(40/36);
+        letter-spacing: 0.02em;
+        text-align: center;
+        margin-bottom: 72px;
+    }
 }
 
 /* ----- Team section -- */
