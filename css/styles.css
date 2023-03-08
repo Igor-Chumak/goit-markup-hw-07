@@ -189,11 +189,17 @@ input {
 
 .btn-portfolio {
     color: var(--color-btn-portfolio);
-    padding: 12px 24px;
+    padding: 8px 16px;
     background-color: var(--bg-color-btn-portfolio);
     border: 1px solid var(--brd-color-btn-portfolio);
     border-radius: 4px;
     transition: color var(--transition-property), background-color var(--transition-property), border-color var(--transition-property), box-shadow var(--transition-property);
+}
+
+@media screen and (min-width: 768px) {
+    .btn-portfolio {
+        padding: 12px 24px;
+    }
 }
 
 .btn-portfolio:is(:hover, :focus) {
