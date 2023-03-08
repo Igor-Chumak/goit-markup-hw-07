@@ -206,19 +206,19 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
     .whatwedo-item {
         flex-basis: calc((100% - 2*24px) / 3);
-        /* max-width: 360px; */
+        max-width: 360px;
     }
+}
 
-    .whatwedo-title,
-    .team-title,
-    .customers-title {
-        text-transform: capitalize;
-        font-size: 36px;
-        line-height: calc(40/36);
-        letter-spacing: 0.02em;
-        text-align: center;
-        margin-bottom: 72px;
-    }
+.whatwedo-title,
+.team-title,
+.customers-title {
+    text-transform: capitalize;
+    font-size: 36px;
+    line-height: calc(40/36);
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 72px;
 }
 
 /* ----- Team section -- */
@@ -352,24 +352,60 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
 /* ----- Customers section -- */
 
-
-
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1200px) {}
-
 .customers-section {
-    padding: 130px 0 120px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .customers-flex {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 72px;
 }
 
 .customers-item {
-    flex-basis: calc((100% - 5*24px) / 6);
+    flex-basis: calc((100% - 1*16px) / 2);
+    min-width: 190px;
     height: 88px;
+}
+
+@media screen and (min-width: 768px) {
+    .customers-section>.container {
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
+    .customers-flex {
+        column-gap: 24px;
+        /* row-gap: 72px; */
+    }
+
+    .customers-item {
+        flex-basis: calc((100% - 2*24px) / 3);
+        min-width: 168px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .customers-section {
+        padding-top: 130px;
+        padding-bottom: 120px;
+    }
+
+    .customers-section>.container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .customers-flex {
+        gap: 24px;
+    }
+
+    .customers-item {
+        flex-basis: calc((100% - 5*24px) / 6);
+    }
 }
 
 .customers-icon-ref {
@@ -393,6 +429,13 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
 .customers-icon {
     fill: currentColor;
-    width: 104px;
+    width: 110px;
     height: 56px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .customers-icon {
+        width: 104px;
+    }
 }
