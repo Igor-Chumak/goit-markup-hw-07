@@ -114,27 +114,13 @@ input {
     margin: 0 auto;
     padding: 0 16px;
 
-    /* off */
     outline: 1px dotted red;
 }
-
-/* .container2 {
-    max-width: 428px;
-    margin: 0 auto;
-    padding: 0 16px;
-
- outline: 1px dotted purple;
-} */
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
     }
-
-    /* .container2 {
-        max-width: 552px;
-        padding: 0 108px;
-    } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -142,11 +128,6 @@ input {
         max-width: 1158px;
         padding: 0 15px;
     }
-
-    /* .container2 {
-        max-width: 1158px;
-        padding: 0 15px;
-    } */
 }
 
 .visually-hidden {
