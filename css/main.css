@@ -87,51 +87,60 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
 /* ----- Features section -- */
 
-.features-section {
-    padding: 120px 0;
-}
 
-.features-flex {
-    display: flex;
-    gap: 24px;
-}
 
-.features-item {
-    flex-basis: calc((100% - 3*24px) / 4);
-    /* max-width: 264px; */
-}
 
-.features-icon-box {
-    display: flex;
-    width: 100%;
-    height: 112px;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bg-color-light);
-    border-radius: 4px;
-}
+@media screen and (min-width: 768px) {}
 
-.features-icon {
-    --size: 64px;
-    width: var(--size);
-    height: var(--size);
-}
+@media screen and (min-width: 1200px) {
 
-.features-title {
-    margin-top: 8px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: calc(24/20);
-    letter-spacing: 0.02em;
-}
+    .features-section {
+        padding: 120px 0;
+    }
 
-.features-text {
-    margin-top: 8px;
-    color: var(--color-secondary);
-    letter-spacing: 0.02em;
+    .features-flex {
+        display: flex;
+        gap: 24px;
+    }
+
+    .features-item {
+        flex-basis: calc((100% - 3*24px) / 4);
+        /* max-width: 264px; */
+    }
+
+    .features-icon-box {
+        display: flex;
+        width: 100%;
+        height: 112px;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-color-light);
+        border-radius: 4px;
+    }
+
+    .features-icon {
+        --size: 64px;
+        width: var(--size);
+        height: var(--size);
+    }
+
+    .features-title {
+        margin-top: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: calc(24/20);
+        letter-spacing: 0.02em;
+    }
+
+    .features-text {
+        margin-top: 8px;
+        color: var(--color-secondary);
+        letter-spacing: 0.02em;
+    }
 }
 
 /* ----- What We Do section -- */
+
 .whatwedo-section {
     padding-bottom: 120px;
 }
@@ -158,6 +167,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 /* ----- Team section -- */
+
 .team-section {
     background-color: var(--bg-color-light);
     padding-top: 120px;
@@ -229,6 +239,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 /* ----- Customers section -- */
+
 .customers-section {
     padding: 130px 0 120px 0;
 }
