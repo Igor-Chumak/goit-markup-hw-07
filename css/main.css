@@ -15,7 +15,10 @@
         max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+
+        background-image: var(--bg-hero-image-grad), url(../images/people-office.jpg);
+
+        /* background-position: center; */
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -29,6 +32,16 @@
         letter-spacing: 0.02em;
         text-align: center;
         /* text-transform: none; */
+    }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 1200px) and (min-resolution: 192dpi),
+screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    .hero-section {
+        background-image: var(--bg-hero-image-grad),
+            url(../images/people-office@2x.jpg);
     }
 }
 

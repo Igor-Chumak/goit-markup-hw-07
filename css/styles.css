@@ -39,6 +39,7 @@
     --bg-color-light: #F4F4FD;
     --bg-color-btn-hero: #4D5AE5;
     --bg-color-btn-hero-hover: #404BBF;
+    --bg-hero-image-grad: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
     --bg-color-btn-footer: #4D5AE5;
     --bg-color-team-icon: #4D5AE5;
     --bg-color-team-icon-hover: #404BBF;
