@@ -776,9 +776,9 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 408px;
-    min-height: 584px;
-    padding: 72px 24px 24px;
+    width: 392px;
+    min-height: 586px;
+    padding: 72px 18px 24px 18px;
 
     transform: translate(-50%, -50%) scaleY(1) skew(0);
 
@@ -791,6 +791,20 @@ header {
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scaleY(0) skew(-90deg);
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 408px;
+        padding: 72px 25px 24px 23px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        min-height: 584px;
+        padding: 72px 24px 24px;
+    }
 }
 
 .btn-modal-close {
@@ -841,9 +855,16 @@ header {
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.04em;
     color: var(--color-modal-input);
+}
+
+@media screen and (min-width: 768px) {
+    .input-text {
+        line-height: calc(14 / 12);
+        letter-spacing: 0.01em;
+    }
 }
 
 .modal-field {
@@ -892,6 +913,18 @@ header {
 .modal-field-textarea {
     margin-bottom: 16px;
     display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-field-textarea {
+        margin-bottom: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-field-textarea {
+        margin-bottom: 16px;
+    }
 }
 
 .modal-field-comment {
