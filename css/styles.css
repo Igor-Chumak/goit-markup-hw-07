@@ -772,10 +772,15 @@ header {
     pointer-events: none;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
+    /* max-width: 392px; */
     width: 392px;
     min-height: 586px;
     padding: 72px 18px 24px 18px;
@@ -795,6 +800,7 @@ header {
 
 @media screen and (min-width: 768px) {
     .modal {
+        /* max-width: 408px; */
         width: 408px;
         padding: 72px 25px 24px 23px;
     }
