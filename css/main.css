@@ -188,13 +188,16 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
 /* ----- What We Do section -- */
 
-
-@media screen and (min-width: 768px) {}
+.whatwedo-section {
+    display: none;
+}
 
 @media screen and (min-width: 1200px) {
 
     .whatwedo-section {
+        display: block;
         padding-bottom: 120px;
+
     }
 
     .whatwedo-flex {
