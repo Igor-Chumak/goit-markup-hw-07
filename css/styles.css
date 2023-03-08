@@ -564,7 +564,8 @@ header {
 
 .footer-content {
     max-width: 268px;
-    outline: 1px dotted white;
+
+    /* outline: 1px dotted white; */
 }
 
 .footer .logo {
@@ -595,7 +596,7 @@ header {
     text-align: center;
     color: var(--color-social);
 
-    outline: 1px dotted white;
+    /* outline: 1px dotted white; */
 }
 
 .footer-icons-box {
@@ -659,7 +660,7 @@ header {
     max-width: 398px;
     color: var(--color-subscribe);
 
-    outline: 1px dotted white;
+    /* outline: 1px dotted white; */
 }
 
 .footer-subscribe-title {
@@ -724,7 +725,6 @@ header {
 }
 
 /* @media screen and (min-width: 768px) {
-
     .footer-input {
         width: 264px;
     }
