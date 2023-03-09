@@ -35,11 +35,28 @@
     text-align: center;
 }
 
+@media screen and (min-width: 428px) {
+
+    .hero-section {
+        background-image: var(--bg-hero-image-grad), url(../images/people-office@tab.jpg);
+    }
+}
+
+@media screen and (min-width: 428px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 428px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 428px) and (min-resolution: 192dpi),
+screen and (min-width: 428px) and (min-resolution: 2dppx) {
+    .hero-section {
+        background-image: var(--bg-hero-image-grad),
+            url(../images/people-office@tab2x.jpg);
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     .hero-section {
         padding-bottom: 108px;
-        background-image: var(--bg-hero-image-grad), url(../images/people-office@tab.jpg);
+        background-image: var(--bg-hero-image-grad), url(../images/people-office.jpg);
     }
 
     .hero-title {
@@ -51,12 +68,12 @@
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-screen and (min-width:7680px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
 screen and (min-width: 768px) and (min-resolution: 192dpi),
 screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .hero-section {
         background-image: var(--bg-hero-image-grad),
-            url(../images/people-office@tab2x.jpg);
+            url(../images/people-office@2x.jpg);
     }
 }
 
@@ -66,22 +83,12 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
         max-width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
-        background-image: var(--bg-hero-image-grad), url(../images/people-office.jpg);
+        /* background-image: var(--bg-hero-image-grad), url(../images/people-office.jpg); */
     }
 
     .hero-title {
         max-width: 496px;
         margin-bottom: 48px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
-screen and (min-width: 1200px) and (min-resolution: 192dpi),
-screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-    .hero-section {
-        background-image: var(--bg-hero-image-grad),
-            url(../images/people-office@2x.jpg);
     }
 }
 
