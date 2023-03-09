@@ -25,7 +25,8 @@
 }
 
 .portfolio-item {
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
+    width: 100%;
     /* min-width: 396px; */
 }
 
