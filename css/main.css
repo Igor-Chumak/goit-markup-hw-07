@@ -278,8 +278,9 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     }
 
     .team-section>.container {
-        padding-left: 108px;
-        padding-right: 108px;
+        /* padding-left: 108px;
+        padding-right: 108px; */
+        max-width: 584px;
     }
 
     .team-flex {
@@ -306,8 +307,9 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     }
 
     .team-section>.container {
-        padding-left: 15px;
-        padding-right: 15px;
+        /* padding-left: 15px;
+        padding-right: 15px; */
+        max-width: 1158px;
     }
 
     .team-flex {
@@ -373,9 +375,11 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 @media screen and (min-width: 768px) {
+
     .customers-section>.container {
-        padding-left: 108px;
-        padding-right: 108px;
+        /* padding-left: 108px;
+        padding-right: 108px; */
+        max-width: 584px;
     }
 
     .customers-flex {
@@ -396,8 +400,9 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     }
 
     .customers-section>.container {
-        padding-left: 15px;
-        padding-right: 15px;
+        /* padding-left: 15px;
+        padding-right: 15px; */
+        max-width: 1158px;
     }
 
     .customers-flex {

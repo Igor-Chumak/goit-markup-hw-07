@@ -398,6 +398,7 @@ header {
         top: 0;
         left: 0;
         z-index: 999;
+        overflow-y: auto;
         background-color: var(--bg-color);
 
         transition: opacity var(--transition-property), visibility var(--transition-property);
@@ -405,17 +406,17 @@ header {
 
     .container-mob-menu {
         position: relative;
-        padding: 41px 36px 48px 36px;
-
+        padding: 80px 36px 48px 36px;
+        /* padding: 41px 36px 48px 36px; */
         height: 100%;
 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        /* justify-content: space-between; */
 
         transform: scaleY(1) skew(0);
 
-        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+        /* box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); */
 
         transition: transform var(--transition-property);
     }
@@ -445,7 +446,8 @@ header {
     }
 
     .mob-menu-nav {
-        margin-top: 39px;
+        /* margin-top: 39px; */
+        margin-bottom: auto;
     }
 
     .mob-nav-link {
@@ -467,7 +469,7 @@ header {
 
     .mob-address-side {
         margin-bottom: 80px;
-        margin-left: 4px;
+        /* margin-left: 4px; */
     }
 
     .mob-tel-link {
@@ -489,10 +491,11 @@ header {
     }
 
     .mob-menu-icons-box {
-        width: calc(100% - 36px - 40px);
-        position: absolute;
+        /* width: calc(100% - 36px - 40px); */
+        max-width: 328px;
+        /* position: absolute;
         bottom: 40px;
-        left: 40px;
+        left: 40px; */
 
         display: flex;
         justify-content: space-between;
@@ -545,8 +548,9 @@ header {
 @media screen and (min-width: 768px) {
 
     .footer>.container {
-        padding-left: 108px;
-        padding-right: 108px;
+        /* padding-left: 108px;
+        padding-right: 108px; */
+        max-width: 584px;
     }
 
     .footer-flex {
@@ -564,14 +568,14 @@ header {
     }
 
     .footer>.container {
-        padding-left: 15px;
-        padding-right: 15px;
+        /* padding-left: 15px;
+        padding-right: 15px; */
+        max-width: 1158px;
     }
 }
 
 .footer-content {
     max-width: 268px;
-
     /* outline: 1px dotted white; */
 }
 
@@ -602,7 +606,6 @@ header {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-social);
-
     /* outline: 1px dotted white; */
 }
 
