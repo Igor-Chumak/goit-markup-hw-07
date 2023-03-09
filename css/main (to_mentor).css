@@ -231,9 +231,8 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 .team-section>.container {
-    /* padding-left: 82px;
-    padding-right: 82px; */
-    max-width: 296px;
+    padding-left: 82px;
+    padding-right: 82px;
 }
 
 .team-flex {
